@@ -1,0 +1,31 @@
+---
+title: "Template: Relatório - Indivíduo 1"
+execute: 
+  echo: false
+---
+
+Indivíduo 16, de acordo com a fonte X, tinha pessoas escravizadas em suas fazendas. Ele é trisavô do indivíduo 1, governador de do estado Y. 
+
+```{r}
+library(DiagrammeR)
+
+DiagrammeR::mermaid("
+graph LR
+    1[Indivíduo 1] --> 2[Indivíduo 2, pai de 1]
+    1 --> 3[Indivíduo 3, mãe de 1]
+    2 --> 4[Indivíduo 4, pai de 2, avô de 1]
+    2 --> 5[Indivíduo 5, mãe de 2, avó de 1]
+    3 --> 6[Indivíduo 6, pai de 3, avô de 1]
+    3 --> 7[Indivíduo 7, mãe de 3, avó de 1]
+    4 --> 8[Indivíduo 8, pai de 4, bisavô de 1]
+    4 --> 9[Indivíduo 9, mãe de 4, bisavó de 1]
+    5 --> 10[Indivíduo 10, pai de 5, bisavô de 1]
+    5 --> 11[Indivíduo 11, mãe de 5, bisavó de 1]
+    6 --> 12[Indivíduo 12, pai de 6, bisavô de 1]
+    6 --> 13[Indivíduo 13, mãe de 6, bisavó de 1]
+    7 --> 14[Indivíduo 14, pai de 7, bisavô de 1]
+    7 --> 15[Indivíduo 15, mãe de 7, bisavó de 1]
+    8 --> 16[Indivíduo 16, pai de 8, trisavô de 1]
+")
+
+```
