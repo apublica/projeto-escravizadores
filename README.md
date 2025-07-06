@@ -35,11 +35,7 @@ Foram aplicadas metodologias de inteligência de fontes abertas (OSINT), cruzand
 
 ## Uso de ChatGPT, OCR e programação em R
 
-Para lidar com manuscritos históricos — geralmente cursivos e degradados —, foram utilizadas tecnologias de OCR e inteligência artificial. Um modelo do ChatGPT foi usado para auxiliar na:
-
-- Transcrição automática de documentos;
-- Extração de informações específicas (nomes, datas, relações familiares, termos jurídicos);
-- Criação de códigos em R com o pacote DiagrammeR.
+Para lidar com manuscritos históricos — geralmente cursivos e degradados —, foram utilizadas tecnologias de OCR e inteligência artificial. Um modelo do ChatGPT foi usado para auxiliar na transcrição automática de documentos, extração de informações específicas (nomes, datas, relações familiares, termos jurídicos) e criação de códigos em R com o pacote DiagrammeR.
 
 ## Visualização e relatórios
 
