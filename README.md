@@ -1,36 +1,56 @@
-## Material de apoio - Projeto Escravizadores
-Este repositório foi criado para disponibilizar publicamente alguns arquivos e scripts usados no processo de apuração do Projeto Escravizadores. A metodologia adotada pela Agência Pública no projeto pode ser lida [aqui](). 
+# Material de Apoio – Projeto Escravizadores
 
-O processo de apuração combinou técnicas de genealogia, jornalismo investigativo, análise documental, análise de dados e inteligência artificial para rastrear possíveis vínculos entre autoridades políticas contemporâneas e a escravidão no Brasil. 
+Este repositório reúne arquivos e scripts utilizados no processo de apuração do **Projeto Escravizadores**, realizado pela **Agência Pública**. A metodologia completa empregada no projeto pode ser consultada [neste link]([#](https://apublica.org/2024/11/como-a-publica-descobriu-os-antepassados-que-teriam-escravizados/)).
 
-## A amostra
-Presidentes do Brasil desde a redemocratização, governadores em exercício e senadores da 57ª legislatura (2023–2027), totalizando 116 investigados. Dentre esses nomes, 33 foram identificados com ancestrais ligados ao sistema escravocrata.
+## Metodologia
 
-## Fontes 
-* Listas nominativas de habitantes e maços de população (como censos populacionais do século XIX);
-* Registros de batismos, nascimentos, casamentos e inventários post-mortem (registros de bens deixados por falecidos, incluindo pessoas escravizadas) de cartórios e paróquias: a maioria disponível no FamilySearch (plataforma de genealogia da Igreja de Jesus Cristo dos Santos dos Últimos Dias, principal ferramenta de busca), mas também foram consultados em cartórios e arquivos públicos de diferentes estados, incluindo o Centro de Preservação, Pesquisa e Referência (CPPR) do Museu da Imigração, a primeira biblioteca afiliada do FamilySearch no Brasil, e Centros de História da Família da Igreja de Jesus Cristo dos Santos dos Últimos Dias;
-* DivulgaCand (TSE) - para dados das figuras políticas mais recentes;
-* Google Acadêmico (para a busca de estudos que citam os parentescos investigados);
-* Anúncios de jornais, presentes em periódicos da hemeroteca da Biblioteca Nacional;
-* Redes sociais.
+A investigação combinou técnicas de **genealogia**, **jornalismo investigativo**, **análise documental**, **análise de dados** e **inteligência artificial** para rastrear possíveis vínculos entre autoridades políticas contemporâneas e o sistema escravocrata brasileiro.
 
+## Amostra
 
-## OSINT 
-Fizemos buscas documentais específicas com técnicas de OSINT (Open-Source Intelligence), em que foram combinados os nomes dos ancestrais com termos associados à escravidão — como “escravo”, “cativo”, “alforria”, “africano” ou “crioulo” — em acervos históricos, repositórios de pesquisas acadêmicas e bancos de dados. A equipe analisou cerca de 500 documentos originais. Mais de 200 vínculos entre parentes diretos de políticos e pessoas escravizadas foram registrados.
+Foram investigados **116 nomes**, entre eles:
 
-## ChatGPT, OCR e programação em R
+- Todos os **presidentes do Brasil desde a redemocratização**;
+- **Governadores em exercício**;
+- **Senadores da 57ª legislatura (2023–2027)**.
 
-Para lidar com a dificuldade de leitura de manuscritos históricos, frequentemente cursivos e deteriorados, a equipe utilizou inteligência artificial para transcrever automaticamente os documentos digitalizados, seguido de checagem por repórteres da equipe. Criamos um ChatGPT que servia de suporte na transcrição de documentos ajudando na extração de informações específicas (como nomes, datas, termos jurídicos e relações familiares) e na criação de códigos em R (usando o pacote DiagrammeR) para visualizar as conexões entre as figuras investigadas. 
-![Design sem nome (5)](https://github.com/user-attachments/assets/5874c534-feef-4e63-b58b-6f895d0e4343)
+Dos investigados, **33 foram identificados com ancestrais ligados diretamente à escravidão**.
 
-![](https://i0.wp.com/apublica.org/wp-content/uploads/2024/11/2-Como-a-Publica-descobriu-os-descendentes-de-escravocratas.png?w=1400&ssl=1)
+## Fontes consultadas
 
-A representação visual foi feita usando R e Quarto, facilitando a navegação dos jornalistas pelas redes de parentesco em relatórios automatizados. Esse diagrama considera o sistema de numeração genealógica Sosa-Stradonitz (veja um [exemplo]() do código para gerar o relatório).
+A apuração se baseou em fontes primárias e secundárias, incluindo:
 
-Todas as descobertas foram validadas. A validação exigia a existência de fontes documentais originais, a confirmação de parentesco direto entre o político investigado e a pessoa identificada como escravizadora, além do cruzamento com fontes acadêmicas confiáveis. Após a conclusão da árvore genealógica de cada autoridade, a Pública entrou em contato com todos os nomes citados, enviando previamente os resultados com, no mínimo, 15 dias de antecedência à publicação, oferecendo espaço para resposta ou contestação.
+- **Listas nominativas de habitantes** e **maços de população** (equivalentes a censos do século XIX);
+- **Registros de batismo, nascimento, casamento e inventários post-mortem**, muitos disponíveis na plataforma **FamilySearch**, além de arquivos públicos, cartórios e instituições como:
+  - **Museu da Imigração (CPPR)**;
+  - **Centros de História da Família da Igreja de Jesus Cristo dos Santos dos Últimos Dias**;
+- Dados eleitorais do **DivulgaCand (TSE)**;
+- **Google Acadêmico**, para busca de estudos sobre as famílias investigadas;
+- **Hemeroteca da Biblioteca Nacional**, com anúncios de jornais históricos;
+- **Redes sociais**.
 
+## Técnicas de OSINT
 
+Foram aplicadas metodologias de **inteligência de fontes abertas (OSINT)**, cruzando nomes de ancestrais com termos como “escravo”, “cativo”, “alforria”, “africano” e “crioulo” em bancos de dados históricos, repositórios acadêmicos e documentos originais. No total, foram analisados cerca de **500 documentos**, resultando na identificação de **mais de 200 vínculos documentados entre parentes diretos de políticos e pessoas escravizadas**.
 
+## Uso de ChatGPT, OCR e programação em R
 
-  
-![image](https://github.com/user-attachments/assets/8b3ba7fa-0c61-4ee3-ad61-fc59c0b5151e)
+Para lidar com manuscritos históricos — geralmente cursivos e degradados —, foram utilizadas tecnologias de **OCR** e **inteligência artificial**. Um modelo do **ChatGPT** foi usado para auxiliar na:
+
+- **Transcrição automática de documentos**;
+- **Extração de informações específicas** (nomes, datas, relações familiares, termos jurídicos);
+- **Criação de códigos em R** com o pacote **DiagrammeR**.
+
+## Visualização e relatórios
+
+As árvores genealógicas e conexões familiares foram representadas visualmente, inicialmente, por uma [planilha](https://github.com/apublica/projeto-escravizadores/blob/main/Template%20Sosa-Stradonitz.xlsx)] baseada no sistema de numeração genealógica [Sosa-Stradonitz](https://docs.ancestris.org/books/user-guide/page/generate-sosa-numbers), e depois por meio do **R** e do **Quarto**, para automatizar a criação de relatórios. Os [relatórios](https://github.com/apublica/projeto-escravizadores/blob/main/template_relatorio.qmd) automatizados facilitaram a navegação da equipe jornalística pelas redes de parentesco.
+
+## Validação e direito de resposta
+
+Todas as descobertas foram rigorosamente validadas. Os critérios incluíam:
+
+- Existência de **documentos originais**;
+- Comprovação de **parentesco direto** entre o político e o escravizador identificado;
+- **Cruzamento com fontes acadêmicas confiáveis**.
+
+Antes da publicação, a **Agência Pública** entrou em contato com todos os citados, **enviando os resultados com pelo menos 15 dias de antecedência**, oferecendo espaço para **resposta ou contestação**.
